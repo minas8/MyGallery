@@ -1,0 +1,247 @@
+body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    /* background-color: red; */
+    text-align: center;
+    background-color: linen;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Roboto", sans-serif;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    padding-top: 10px;
+    border-bottom: 2px dashed gray;
+
+}
+
+footer {
+    padding-top: 10px;
+    border-top: 2px dashed gray;
+    font-size: 12px;
+}
+
+h1 {    
+    margin-top: 0;
+    /* padding: 5px; */
+    color: gray;
+    /* background-color: royalblue; */
+    /* border-radius: 14px; */
+}
+
+.board-container {
+    padding: 10px 0;
+    text-align: center;
+    background-color: lightgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cell {
+    width: 25px;
+    height:25px;
+    display: inline-block;
+    text-align: center;
+    font-size:1.4em;
+    background-color: gray;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+}
+.cell:hover {
+    cursor: pointer;
+    background-color: #777777;
+}
+.cell img {
+    width:24px;
+    /* padding: 15px; */
+    /* height:auto; */
+    transition: 3s;
+}
+
+.shown {
+    background-color: darkgray;
+    border-top: 1px solid #222222;
+    border-left: 1px solid #222222;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+
+}
+.marked {
+    background-color: lightgray;
+    /* background: url("images/flag.png") no-repeat fixed center; */
+}
+
+.buttons {
+    background-color: salmon;
+    border-top: 2px dashed black;
+    height: 30px;
+    padding-top: 7px;
+    margin: auto;
+}
+.btns {
+    position: relative;
+    left: 150px;
+    /* left: 20%; */
+    width: 430px;
+    height: 20px;
+    /* background: yellow; */
+}
+.smiley {
+    width: 110px;
+    height: 20px;
+    /* margin-left: 20%; */
+    margin-left: 155px;
+    /* background-color: red; */
+}
+.smiley img {
+    width:24px;
+    /* padding: 15px; */
+    /* height:auto; */
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+}
+.smiley img:hover {
+    border-top: 1px solid #222222;
+    border-left: 1px solid #222222;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+
+}
+.timer {
+    color: black;
+    width: 110px;
+    height: 20px;
+    /* margin-left: 20%; */
+    margin-left: 30px;
+    /* background-color: blue; */
+}
+.float-left {
+    float: left;
+    
+}
+
+.hints {
+    /* width: 50px; */
+    position: absolute;
+    right: 20%;
+    top:20px;
+    z-index: 5;
+    /* background-color: red; */
+}
+.hints img {
+    width:25px;
+    /* height:auto; */
+    margin: 5px;
+    transition: 0.5s;
+    outline: none;
+    cursor: pointer;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+    border-right: 1px solid #222222;
+    border-bottom: 1px solid #222222;
+}
+
+.clicked {
+    padding: 4px;
+    background-color: salmon;
+    /* box-shadow: 0px 0px 8px 2px rgba(128, 43, 4, 0.55); */
+}
+
+/* Hide the browser's default radio button */
+/* input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.radio{
+  position: relative;
+  cursor: pointer;
+  line-height: 20px;
+  font-size: 14px;
+  margin: 15px;
+}
+.label {
+    position: relative;
+    display: block;
+    float: left;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #777777;
+    border-radius: 100%;
+    -webkit-tap-highlight-color: transparent;
+  } */
+  /* .parent .child {} */
+    /* &:after{ */
+/* .label:after{
+      content: '';
+      position: absolute;
+      top: 82px;
+      left: 80px;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background: #555555;
+      transform: scale(0);
+      transition: all .2s ease;
+      opacity: .08;
+      pointer-events: none;
+} */
+  /* &:hover */
+/* .label:hover
+    .label:after {
+      transform: scale(3.6);
+}
+  
+input[type="radio"]:checked + .label {
+  border-color: #555555;
+} */
+  /* &:after */
+/* input[type="radio"]:checked + .label:after{
+    transform: scale(1);
+    transition: all .2s cubic-bezier(.35,.9,.4,.9);
+    opacity: 1;
+} */
+
+/* .cntr{
+  position: relative;
+  top: calc(50% - 10px);
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+.hidden{
+  display: none;
+} */
+
+/* dribbble  */
+/* .credit{
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  transition: all .2s ease;
+  -webkit-user-select: none;
+  user-select: none;
+  opacity: .6;
+}
+img {
+    width: 72px;
+  } */
+  /* &:hover{ */
+/* img:hover{
+    transform: scale(.95);
+  } */

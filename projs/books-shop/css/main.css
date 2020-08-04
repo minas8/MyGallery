@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+    background-color: blanchedalmond;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    height: 100vh;
+}
+.content-container {
+    /* height: 100%; */
+    flex-grow: 4;
+}
+
+header {
+    font-family: fantasy;
+    height: 50px;
+    background-color: white;
+    box-shadow: rgba(5, 0, 80, 0.75) 0px 0px 17px 1px;
+    padding: 10px;
+    background-color: cornflowerblue;
+    border-bottom: 2px solid royalblue;
+}
+
+footer {
+    padding: 5px 0;
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+    background-color: cornflowerblue;
+    border-top: 2px solid royalblue;
+}
+
+.books-container {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 80%;
+}
+.books-tbl {
+    text-align: left;
+    border-spacing: 0;
+    width: 100%;
+    margin-top: 10px;
+    background-color: navajowhite;
+    text-align: center;
+}
+.books-list button {
+    outline: none;
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 2px;
+}
+.read {
+    background-color: royalblue;
+}
+.update {
+    background-color: tomato;
+
+}
+.delete {
+    background-color: maroon;
+
+}
+
+.books-tbl th:nth-child(3),.books-tbl td:nth-child(3){
+    width: 10%;
+}
+.books-tbl th:nth-child(1),.books-tbl td:nth-child(1){
+    text-align: left;
+    width: 10%;
+}
+.books-tbl th:nth-child(2),.books-tbl td:nth-child(2){
+    text-align: left;
+    width: 50%;
+}
+.books-tbl td:nth-child(3){
+    font-weight: bold;
+}
+th {
+    background-color: tomato;
+}
+th,td {
+    border-top: 2px solid blanchedalmond;
+    padding: 5px;
+    border-bottom: 1px solid #ff634794;
+}
+thead th:not(:last-child) {
+    border-right: 2px solid blanchedalmond;
+}
+.books-tbl th:nth-child(2),.books-tbl th:nth-child(3){
+    cursor: pointer;
+}
+
+.pagination {
+
+    text-align: center;
+    margin-top: 10px;
+}
+.pagination-btns {
+    display: flex;
+    justify-content: center;
+}
+.pagination-btns button {
+    color: gray;
+    border: 1px solid lightgray;
+    outline: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: white;
+}
+/* .pagination-btns .off button {
+    background-color: gray;
+} */
+.pagination-btns .active button {
+    color: royalblue;
+    border: 1px solid lightskyblue;
+    outline: none;
+    font-size: 12px;
+    padding: 5px 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.add-book {
+    outline: none;
+    font-weight: bold;
+    border: 0;
+    color: royalblue;
+    background-color: transparent;
+}
+
+/* Book Details Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Black opacity */
+  }
+  
+  /* Modal Box */
+  .modal-content {
+    background-color: blanchedalmond;
+    /* margin: 0 auto;  15% from the top and centered */
+    padding: 3px;
+    border: 1px solid #888888;
+  }
+
+  /* Modal Content */
+  .book-details {
+    /* position: relative; */
+    width: 20%;
+    /* height: 65%; */
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 0 0 10px 0px royalblue;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .details {
+    font-weight: bold;
+    padding: 15px;
+  }
+
+.book-name {
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      border-bottom: 1px dashed royalblue;
+  }
+
+  .rate-book {
+    border-top: 1px dashed royalblue;
+    margin-top: 10px;
+    padding-top: 5px;
+  }
+  .rate,.numbers-only {
+    font-weight: normal;
+    font-size: 12px;
+  }
+
+  .details-btn {
+    padding-top: 2px;
+  }
+
+  .book-text,.book-price {
+      text-align: left;
+  }
+  .details-btn {
+      text-align: right;
+  }
+
+  .error {
+    text-align: left;
+      color: red;
+      display: none;
+      font-weight: normal;
+      font-size: 12px;
+  }
+
+  /* Add Book Modal (background) */
+.add-update-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    background-color: rgba(0,0,0,0.4); /* Black opacity */
+  }
+  
+  /* Modal Box */
+  .add-modal-content {
+    background-color: blanchedalmond;
+    margin: 50px auto; /* 15% from the top and centered */
+    padding: 5px;
+    border: 1px solid #888888;
+  }
+
+    /* Modal Content */
+  .add-book-details {
+    position: relative;
+    width: 250px;
+    /* height: 65%; */
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid white;
+    box-shadow: 0 0 10px 0px royalblue;
+  }
+  
+  /* The Close Button */
+  .add-close {
+    color: #aaaaaa;
+    float: right;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .add-close:hover,
+  .add-close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }  
+
+  .add-details {
+    font-weight: bold;
+    padding: 15px;
+  }
+  .details-input > div {
+    padding: 2px 0;
+  }

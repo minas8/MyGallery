@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="onInit()">
+    <div class="main-container">
+        <header>
+            <h1>My Book Shop</h1>
+        </header>
+        <div class="content-container">
+            <!-- Book Details Modal -->
+            <div class="modal" onclick="onCloseDetails()">
+                <!-- Modal content -->
+                <div class="modal-content book-details">
+                    <span class="close" onclick="onCloseDetails()">&times;</span>
+                    <div class="details" onclick="onInputClick(event,this)"></div>
+                </div>
+            </div>
+
+            <!-- Add/Update Book Modal -->
+            <div class="add-update-modal" onclick="onCloseModal()">
+                <!-- Modal content -->
+                <div class="modal-content book-details">
+                    <span class="add-close" onclick="onCloseModal()">&times;</span>
+                    <div class="add-details" onclick="onInputClick(event,this)"></div>
+                </div>
+            </div>
+
+            <div class="books-container">
+                <button class="add-book" type="button" onclick="onShowModal()">Create new book</button>
+                <table class="books-tbl">
+                    <thead>
+                        <th>Id</th>
+                        <th onclick="onSetSort('name')">Title</th>
+                        <th onclick="onSetSort('price')">Price</th>
+                        <th colspan="3">Actions</th>
+                    </thead>
+                    <tbody class="books-list">
+                    </tbody>
+                </table>
+            </div>
+            <div class="pagination">
+                <div class="pagination-btns">
+                </div>
+            </div>
+        </div>
+        <footer>
+            <span>Developed by Mina Shtraicher</span>
+        </footer>
+    </div>
+    <script src="js/util-service.js"></script>
+    <script src="js/storage-service.js"></script>
+    <script src="js/shop-service.js"></script>
+    <script src="js/shop-controller.js"></script>
+</body>
+
+</html>

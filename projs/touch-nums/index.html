@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Touch the Numbers</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()">
+    <h1>Game of Life</h1>
+
+    <div class="game-container">
+        <button class="" onclick="init()">New Game</button>
+        <div class="choose-level">
+            <span class="level">Choose Your Level:</span><br />
+            <input type="radio" name="level" onclick="chooseYourLevel(16)" checked> Eazy (16)
+            <input type="radio" name="level" onclick="chooseYourLevel(25)">Hard (25)
+            <input type="radio" name="level" onclick="chooseYourLevel(36)">Extreme! (36)
+
+        </div>
+        <div>
+            <div class="timer">
+                <span>Game Time:</span><br />
+                <span class="game-time"></span>
+            </div>
+            <div class="next-number">
+                <span>Next Number:</span><br />
+                <span class="next"></span>
+            </div>
+        </div>
+        <div>
+            <table class="board-container" cellpadding="0">
+                <tbody class="board">
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

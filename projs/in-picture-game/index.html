@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ex-InPicture</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="initGame()">
+    <h1>What's In the Picture</h1>
+    <h2 class="question">Pick the sentence that describes the picture:</h2>
+    <table class="container">
+        <tbody class="question-container">
+        </tbody>
+    </table>
+    <div class="wrapper">
+        <img class="error" src="images/error.png" alt="">
+    </div>
+    <div class="wrapper">
+        <img class="victory" src="images/victory.png" alt="">
+    </div>
+    <div class="wrapper">
+        <button class="restart" onclick="restart()">Restart the game</button>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
